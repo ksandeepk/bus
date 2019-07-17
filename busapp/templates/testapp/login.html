@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <form action="/logincheck/" method="POST">
+        {% csrf_token %}
+        <font color = "darkgreen">
+<center>  <h3> Welcome, please login </h3> </center> 
+</font>
+        <table align="center" border="0">
+            <tr><td> <input type="text" placeholder="USERNAME" name="uname" required> </td></tr>
+            <tr><td> <input type="password" placeholder="PASSWORD" name="upass" required></td></tr>
+            <tr> <th colspan="2"> <button type="submit"> Login </button></td></tr>
+        </table>
+       </form>
+       <font color = "red">
+           <center>
+               {{ msg }}
+           </center>
+       </font>
+</body>
+</html>

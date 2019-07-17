@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+    <font color='blue'> <center> <h2> Welcome To Bus Reservation Page </h2> </center></font>
+    <table align="center" border="1"> 
+        <tr> <th colspan="2"> Please register with your details. </th></tr>
+        <tr> {{ dis }} </tr>
+        <!-- <tr> <th> Membership_type
+
+            <select name="mtype">
+                <option> Select </option>
+                <option> Elite </option>
+                <option> Premium </option>
+                <option> Normal </option>
+            </select> 
+        </th>
+        </tr> -->
+        <tr> <th colspan="2"> <button type="submit"> Register </button> </th> </tr> 
+    </table>
+    <font color = "green">  
+    <center>
+    {{ msg }}
+    <br> <br> 
+    <a href = '/login/'> Login </a>
+</center>
+</font> 
+</form>
+</body>
+</html>
+
+
